@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context="com.hussainabdelilah.passwordsaver.LoginActivity">
+
+
+    <EditText
+        android:id="@+id/addDataEditTextAccount"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/login_edit_text_shape"
+        android:ems="10"
+        android:hint="@string/add_data_edit_text_account"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textSize="25sp"
+        android:maxLength="50"/>
+
+    <EditText
+        android:id="@+id/addDataEditTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:background="@drawable/login_edit_text_shape"
+        android:ems="10"
+        android:hint="@string/add_data_edit_text_username"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textSize="25sp"
+        android:maxLength="50"/>
+
+    <EditText
+        android:id="@+id/addDataEditTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:background="@drawable/login_edit_text_shape"
+        android:ems="10"
+        android:hint="@string/add_data_edit_text_password"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textSize="25sp"
+        android:maxLength="50"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addDataButtonSave"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_button_login_shape"
+            android:onClick="onClickSave"
+            android:text="@string/add_data_button_save"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/addDataButtonCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_button_login_shape"
+            android:onClick="onClickCancel"
+            android:text="@string/add_data_button_cancel"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+</LinearLayout>
+

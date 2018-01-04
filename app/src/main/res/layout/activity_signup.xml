@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context="com.hussainabdelilah.passwordsaver.SignupActivity">
+
+
+    <EditText
+        android:id="@+id/signupEditTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/login_edit_text_shape"
+        android:ems="10"
+        android:hint="@string/login_username"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textSize="20sp"
+        android:maxLength="10"/>
+
+    <EditText
+        android:id="@+id/signupEditTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:background="@drawable/login_edit_text_shape"
+        android:ems="10"
+        android:hint="@string/login_password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:textSize="20sp"
+        android:maxLength="15"/>
+
+    <EditText
+        android:id="@+id/signupEditTextConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:background="@drawable/login_edit_text_shape"
+        android:ems="10"
+        android:hint="@string/signup_edit_text_confirm_password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:textSize="20sp"
+        android:maxLength="15"/>
+
+    <Button
+        android:id="@+id/loginButtonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:background="@drawable/login_button_login_shape"
+        android:onClick="onClickSignUpButton"
+        android:text="@string/signup_button_signup"
+        android:textSize="25sp" />
+
+</LinearLayout>
+
+
